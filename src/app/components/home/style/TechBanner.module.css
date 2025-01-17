@@ -1,0 +1,41 @@
+/* styles/TechBanner.module.css */
+.bannerContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100dvw;
+    height: 100px;
+  }
+  
+  .slider {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .slideTrack {
+    display: flex;
+    animation: scroll 11s linear infinite;
+    justify-content: space-evenly;
+    width: 100dvw;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 100px; /* Largura dos elementos */
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Animação */
+  @keyframes scroll {
+    from {
+      transform: translateX(-90%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  
