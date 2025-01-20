@@ -1,0 +1,49 @@
+.contactContainer {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.contactSpace {
+    min-height: 60dvh;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 1rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30;
+}
+
+.contactSpace div input {
+    width: 22rem;
+    padding: .4rem;
+    border-radius: .4rem;
+    background-color: rgb(44, 45, 59);
+}
+
+.contactSpace div textarea {
+    width: 22rem;
+    padding: .4rem;
+    border-radius: .4rem;
+    background-color: rgb(44, 45, 59);
+    max-height: 15rem;
+}
+
+.contactSpace div {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.contactSpace div button{
+    border-radius: .6rem;
+    width: 10rem;
+    padding: 1rem;
+    background-color: rgb(44, 45, 59);
+}
