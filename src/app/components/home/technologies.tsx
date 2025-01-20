@@ -5,8 +5,8 @@ interface technologiesProps {
 }
 export default function Technologies({children}: technologiesProps) {
     return(
-        <article className="flex w-dvw absolute bottom-24">
+        <div className="flex w-dvw relative bottom-0">
             {children}
-        </article>
+        </div>
     )
 }

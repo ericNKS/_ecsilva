@@ -13,6 +13,15 @@ const techLogos = [
   { name: "Laravel", src: "/tech-logo/Laravel.png" },
   { name: "Next.js", src: "/tech-logo/nextjs.png" },
   { name: "Go", src: "/tech-logo/Go.png" },
+  { name: "TypeScript", src: "/tech-logo/Typescript.png" },
+  { name: "React", src: "/tech-logo/React.png" },
+  { name: "Vue", src: "/tech-logo/vuejs.png" },
+  { name: "Git", src: "/tech-logo/git.png" },
+  { name: "Node", src: "/tech-logo/node.png" },
+  { name: "PHP", src: "/tech-logo/php.png" },
+  { name: "Laravel", src: "/tech-logo/Laravel.png" },
+  { name: "Next.js", src: "/tech-logo/nextjs.png" },
+  { name: "Go", src: "/tech-logo/Go.png" },
 ];
 
 export default function Technology() {

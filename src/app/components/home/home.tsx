@@ -13,9 +13,11 @@ export default function Page() {
                         <Me />
                         <About />
                     </article>
-                    <Technologies>
-                        <Technology />
-                    </Technologies>
+                    <article className="relative my-auto ">
+                        <Technologies>
+                            <Technology />
+                        </Technologies>
+                    </article>
                 </section>
             </PagesLayout>
         </>
