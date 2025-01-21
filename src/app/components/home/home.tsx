@@ -8,12 +8,12 @@ export default function Page() {
     return(
         <>
             <PagesLayout id="home">
-                <article className="h-full">
+                <article className="min-h-dvh">
                     <div className="mb-14 flex flex-col lg:flex-row justify-evenly place-items-center">
                             <Me />
                             <About />
                     </div>
-                    <div className="hidden md:flex relative mt-auto ">
+                    <div className="hidden md:flex relative">
                         <Technologies>
                             <Technology />
                         </Technologies>
