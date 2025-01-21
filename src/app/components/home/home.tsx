@@ -9,7 +9,7 @@ export default function Page() {
         <>
             <PagesLayout id="home">
                 <article className="h-full">
-                    <div className="flex flex-col lg:flex-row justify-evenly place-items-center">
+                    <div className="mb-14 flex flex-col lg:flex-row justify-evenly place-items-center">
                             <Me />
                             <About />
                     </div>
