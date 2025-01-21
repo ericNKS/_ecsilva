@@ -4,7 +4,7 @@ export default function Project() {
     return (
         <>
             <PagesLayout id="projects">
-                <article className="h-dvh">
+                <article className="h-screen mt-14">
                     meus projetos loucos
                 </article>
             </PagesLayout>

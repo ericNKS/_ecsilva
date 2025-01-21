@@ -8,7 +8,7 @@ export default function Page() {
     return(
         <>
             <PagesLayout id="home">
-                <article className="flex flex-col">
+                <article className="h-full">
                     <div className="flex flex-col lg:flex-row justify-evenly place-items-center">
                             <Me />
                             <About />
