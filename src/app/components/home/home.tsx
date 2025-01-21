@@ -8,17 +8,17 @@ export default function Page() {
     return(
         <>
             <PagesLayout id="home">
-                <section className="flex h-full flex-col relative">
-                    <article className="flex flex-col lg:flex-row justify-evenly place-items-center">
-                        <Me />
-                        <About />
-                    </article>
-                    <article className="relative my-auto ">
+                <article className="flex flex-col">
+                    <div className="flex flex-col lg:flex-row justify-evenly place-items-center">
+                            <Me />
+                            <About />
+                    </div>
+                    <div className="hidden md:flex relative mt-auto ">
                         <Technologies>
                             <Technology />
                         </Technologies>
-                    </article>
-                </section>
+                    </div>
+                </article>
             </PagesLayout>
         </>
     );

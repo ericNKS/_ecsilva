@@ -25,8 +25,8 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className="bg-neutral-800 h-14 w-dvw z-10 sticky top-0">
-            <nav className="flex justify-center h-full">
+        <header className="bg-neutral-800 h-14 w-full z-10 sticky top-0">
+            <nav className="flex justify-center w-full h-full">
                 <Links />
             </nav>
         </header>

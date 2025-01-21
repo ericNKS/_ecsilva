@@ -4,11 +4,9 @@ export default function Project() {
     return (
         <>
             <PagesLayout id="projects">
-                <section>
-                    <article>
-                        meus projetos loucos
-                    </article>
-                </section>
+                <article className="h-dvh">
+                    meus projetos loucos
+                </article>
             </PagesLayout>
         </>
     );

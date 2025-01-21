@@ -7,7 +7,7 @@ interface pagesLayoutProps {
 
 export default function PagesLayout({ children, id }: pagesLayoutProps) {
     return(
-        <section className="h-screen" id={id}>
+        <section className="relative" id={id}>
             {children}
         </section>
     )
