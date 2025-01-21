@@ -11,7 +11,7 @@ interface projectCardProps {
 
 export default function ProjectCard({imageLink, title, body, technology, links}: projectCardProps) {
     return(
-        <div className="flex gap-14">
+        <div className="flex gap-14 max-w-full">
             <div className="relative flex flex-col my-6 bg-gray-900 shadow-sm border-slate-200 rounded-lg w-96">
                 <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
                     <Image width={400} height={400} alt="Card" src={imageLink} style={{scale: .9, borderRadius: '1rem'}} />

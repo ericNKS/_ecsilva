@@ -8,7 +8,7 @@ export default function Project() {
         <>
             <PagesLayout id="projects">
                 <article className="min-h-screen mt-14 relative">
-                    <div className="gap-20 h-full flex flex-wrap justify-center place-items-center mx-14">
+                    <div className="gap-20 h-full flex flex-wrap justify-center place-items-center">
                         <ProjectCard 
                             title="MailGO"
                             body="Esse projeto é um serviço de envio de Email. Nele voce vai conseguir fazer envio de campanhas de email a partir de um servidor SMTP como do Gmail."
