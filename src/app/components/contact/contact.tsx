@@ -6,6 +6,11 @@ export default function Contact() {
         <>
             <PagesLayout id="contact">
                 <article className={styles.contactContainer}>
+                    <div className="flex justify-center py-8">
+                        <h1 className="text-xl font-semibold">
+                            Entre em contato comigo
+                        </h1>
+                    </div>
                     <div className={styles.contactSpace}>
                         <div>
                             <label htmlFor="name">

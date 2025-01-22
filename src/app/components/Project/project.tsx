@@ -8,6 +8,11 @@ export default function Project() {
         <>
             <PagesLayout id="projects">
                 <article className="min-h-screen mt-14 relative">
+                    <div className="flex justify-center py-8">
+                        <h1 className="text-xl font-semibold">
+                            Meus Projetos
+                        </h1>
+                    </div>
                     <div className="gap-20 h-full flex flex-wrap justify-center place-items-center">
                         <ProjectCard 
                             title="MailGO"
