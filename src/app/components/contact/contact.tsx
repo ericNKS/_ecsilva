@@ -1,6 +1,3 @@
-'use client'
-
-import { ChangeEvent, useState } from "react";
 import PagesLayout from "../layout/pagesLayout";
 import styles from "./style/Contact.module.css";
 
