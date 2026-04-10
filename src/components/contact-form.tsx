@@ -11,7 +11,7 @@ export function ContactForm() {
 
   return (
     <section className="py-24 px-6 lg:px-24">
-      <div className="max-w-4xl mx-auto bg-surface border border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+      <div className="max-w-4xl mx-auto bg-surface border rounded-3xl overflow-hidden shadow-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="p-8 lg:p-12 bg-accent text-white flex flex-col justify-center">
             <h2 className="text-3xl font-bold mb-6 italic">Seu sistema aguenta o próximo pico de tráfego?</h2>
@@ -34,50 +34,50 @@ export function ContactForm() {
             </div>
           </div>
 
-          <form 
-            action="https://airform.io/ek.silva.santos@gmail.com" 
-            method="POST" 
+          <form
+            action="https://airform.io/ek.silva.santos@gmail.com"
+            method="POST"
             onSubmit={() => setLoading(true)}
             className="p-8 lg:p-12 space-y-6"
           >
             <div>
               <label className="block text-sm font-semibold mb-2">Nome</label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full bg-base border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent transition-all"
+                className="w-full bg-base border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent transition-all"
                 placeholder="Seu nome"
               />
             </div>
             <div>
               <label className="block text-sm font-semibold mb-2">E-mail</label>
-              <input 
-                type="email" 
+              <input
+                type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full bg-base border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent transition-all"
+                className="w-full bg-base border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent transition-all"
                 placeholder="seu@email.com"
               />
             </div>
             <div>
               <label className="block text-sm font-semibold mb-2">Mensagem</label>
-              <textarea 
+              <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 required
                 rows={4}
-                className="w-full bg-base border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent transition-all resize-none"
+                className="w-full bg-base border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent transition-all resize-none"
                 placeholder="Como posso ajudar?"
               />
             </div>
 
-            <button 
+            <button
               type="submit"
               disabled={loading}
               className={cn(

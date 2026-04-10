@@ -14,7 +14,7 @@ const technologies = [
 
 export function TechMarquee() {
   return (
-    <section className="py-20 overflow-hidden bg-surface border-y border-gray-200 dark:border-gray-800">
+    <section className="py-20 overflow-hidden bg-surface border-y">
       <div className="flex flex-col items-center mb-10">
         <span className="text-accent font-bold tracking-[0.2em] uppercase text-sm mb-2">Tech Stack</span>
         <h2 className="text-2xl font-bold">Tecnologias que Domino</h2>

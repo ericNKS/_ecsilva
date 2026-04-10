@@ -19,7 +19,7 @@ export default function Home() {
         <div id="contato"><ContactForm /></div>
       </div>
 
-      <footer className="py-12 border-t border-gray-200 dark:border-gray-800 text-center text-muted">
+      <footer className="py-12 border-t text-center text-muted">
         <div className="max-w-7xl mx-auto px-6">
           <p>© {new Date().getFullYear()} Éric Santos</p>
         </div>

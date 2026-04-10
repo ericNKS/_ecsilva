@@ -23,9 +23,9 @@ export function ValueSection() {
     <section className="py-24 px-6 lg:px-24">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {pillars.map((pillar, i) => (
-          <div 
+          <div
             key={i}
-            className="group bg-surface border border-gray-200 dark:border-gray-800 p-8 rounded-2xl hover:border-accent transition-colors duration-300"
+            className="group bg-surface border p-8 rounded-2xl hover:border-accent transition-colors duration-300"
           >
             <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <pillar.icon className="text-accent" size={28} />

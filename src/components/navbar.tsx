@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { useScrollTo } from "@/hooks/useHandleScroll";
+import { useScrollTo } from "@/hooks/useScrollTo";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -17,7 +17,7 @@ export function Navbar() {
   if (!mounted) return null;
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-base/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 px-6 py-4 lg:px-24">
+    <nav className="fixed top-0 w-full z-50 bg-base/80 backdrop-blur-md border-b px-6 py-4 lg:px-24">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-2xl font-black tracking-tighter text-accent">
           ÉRIC<span className="text-primary">.SANTOS</span>
@@ -33,18 +33,18 @@ export function Navbar() {
               Home
             </a>
             <a
-              href="#projetos"
-              onClick={(e) => handleScroll(e, "#projetos")}
-              className="font-medium hover:text-accent transition-colors"
-            >
-              Projetos
-            </a>
-            <a
               href="#sobre"
               onClick={(e) => handleScroll(e, "#sobre")}
               className="font-medium hover:text-accent transition-colors"
             >
               Sobre
+            </a>
+            <a
+              href="#projetos"
+              onClick={(e) => handleScroll(e, "#projetos")}
+              className="font-medium hover:text-accent transition-colors"
+            >
+              Projetos
             </a>
             <a
               href="#contato"
