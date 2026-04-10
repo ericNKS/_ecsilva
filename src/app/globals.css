@@ -1,43 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #171c22;
-  --foreground: #ededed;
+@theme {
+  --color-base: var(--bg-base);
+  --color-surface: var(--bg-surface);
+  --color-primary: var(--text-primary);
+  --color-muted: var(--text-muted);
+  --color-accent: var(--accent-color);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #171c22;
-    --foreground: #ededed;
+    --bg-base: #F8FAFC;
+    --bg-surface: #FFFFFF;
+    --text-primary: #0F172A;
+    --text-muted: #64748B;
+    --accent-color: #4F46E5;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --bg-base: #0F172A;
+    --bg-surface: #1E293B;
+    --text-primary: #F1F5F9;
+    --text-muted: #94A3B8;
+    --accent-color: #6366F1;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+@layer base {
+  html {
+    @apply antialiased selection:bg-accent/30;
+  }
+
+  *, ::after, ::before {
+    border-color: var(--color-gray-200);
+  }
+
+  .dark *, .dark ::after, .dark ::before {
+    border-color: var(--color-gray-800);
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    @apply transition-colors duration-300;
+  }
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+.blob {
+  position: absolute;
+  height: 500px;
+  background: var(--accent-color);
+  filter: blur(80px);
+  opacity: 0.08;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #151a20;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #3d3d49;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+@utility text-balance {
+  text-wrap: balance;
 }
