@@ -1,12 +1,13 @@
 "use client";
 
+import { useDownload } from "@/hooks/useDownload";
 import { useHeroAnimation } from "@/hooks/useHeroAnimation";
 import { ArrowRight, Download } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
   const { container } = useHeroAnimation();
-
+  const { download } = useDownload();
   return (
     <section
       ref={container}
@@ -35,7 +36,9 @@ export function Hero() {
             <ArrowRight size={20} />
           </a>
 
-          <button className="cursor-pointer border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:bg-accent hover:text-white transition-all">
+          <button
+            onClick={() => {download('/Curriculo_Eric_santos.pdf', 'Curriculo_Eric_santos.pdf')}}
+            className="cursor-pointer border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:bg-accent hover:text-white transition-all">
             Baixar Currículo (PDF)
             <Download size={20} />
           </button>
