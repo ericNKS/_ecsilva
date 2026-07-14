@@ -31,6 +31,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Éric Santos", url: "https://ecsilva.com" }],
   creator: "Éric Santos",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -41,10 +45,10 @@ export const metadata: Metadata = {
       "Transformo arquiteturas complexas em motores de eficiência — 77% menos consumo de memória, bancos 90% mais rápidos.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og",
         width: 1200,
         height: 630,
-        alt: "Éric Santos — Engenheiro Backend",
+        alt: "Éric Santos — Engenheiro Backend especializado em TypeScript, Node.js e Go",
       },
     ],
   },
@@ -53,7 +57,7 @@ export const metadata: Metadata = {
     title: "Éric Santos | Engenheiro Backend de Alta Performance",
     description:
       "Transformo arquiteturas complexas em motores de eficiência — 77% menos consumo de memória, bancos 90% mais rápidos.",
-    images: ["/og-image.png"],
+    images: ["/og"],
   },
   robots: {
     index: true,
@@ -78,6 +82,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        <meta name="theme-color" content="#0f172a" />
+        <link rel="me" href="https://github.com/ericNKS" />
+        <link rel="me" href="https://www.linkedin.com/in/eric-santos/" />
+      </head>
       <body className={`${inter.className} max-w-100dvh`}>
         <ThemeProvider>
           <SmoothScroll>

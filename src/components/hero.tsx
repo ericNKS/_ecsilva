@@ -15,8 +15,8 @@ export function Hero() {
     >
       <div className="flex flex-col space-y-8 text-center lg:w-3/5 lg:text-left">
         <h1 className="animate-title text-4xl font-extrabold tracking-tight lg:text-6xl text-balance leading-tight">
-          Sua infraestrutura deve impulsionar seu lucro,
-          <span className="text-accent block mt-2 underline decoration-accent/30">não devorar sua margem.</span>
+          Engenheiro Backend que transforma arquiteturas complexas
+          <span className="text-accent block mt-2 underline decoration-accent/30">em motores de eficiência.</span>
         </h1>
 
         <p className="animate-subtitle text-lg text-muted max-w-2xl lg:text-xl leading-relaxed">
@@ -50,10 +50,12 @@ export function Hero() {
         <Image
           width={1000}
           height={1000}
-          src="/me.png"
-          alt="Imagem de Éric Silva dos Santos"
-          title="Imagem de Éric Silva dos Santos"
-          className="relative w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-accent/20 "
+          src="/me.webp"
+          alt="Foto profissional de Éric Santos, Engenheiro Backend especializado em TypeScript e Node.js"
+          title="Éric Santos — Engenheiro Backend"
+          priority
+          sizes="(max-width: 768px) 256px, 384px"
+          className="relative w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-accent/20"
         />
       </div>
     </section>

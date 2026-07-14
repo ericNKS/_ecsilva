@@ -14,9 +14,9 @@ export function ContactForm() {
       <div className="max-w-4xl mx-auto bg-surface border rounded-3xl overflow-hidden shadow-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="p-8 lg:p-12 bg-accent text-white flex flex-col justify-center">
-            <h2 className="text-3xl font-bold mb-6 italic">Seu sistema aguenta o próximo pico de tráfego?</h2>
+            <h2 className="text-3xl font-bold mb-6 italic">Contrate um Engenheiro Backend</h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Não espere o sistema cair para agir. Vamos reestruturar sua arquitetura legada ou iniciar seu novo produto com bases sólidas para escalar sem sustos.
+              Não espere o sistema cair para agir. Vamos reestruturar sua arquitetura legada ou iniciar seu novo projeto com microsserviços, otimização de banco de dados e Clean Architecture para escalar sem sustos.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3">

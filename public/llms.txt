@@ -1,15 +1,15 @@
-# Éric Santos — Engenheiro Backend
+# Éric Santos — Engenheiro Backend de Alta Performance
 
-> Portfólio profissional de Éric Silva dos Santos, Engenheiro Backend especializado em transformar arquiteturas complexas em motores de eficiência.
+> Portfólio profissional de Éric Silva dos Santos, Engenheiro Backend especializado em transformar arquiteturas complexas em motores de eficiência. Redução de 77% em consumo de memória e bancos de dados 90% mais rápidos em produção.
 
 ## Sobre
 
-Engenheiro Backend com foco em ecossistema TypeScript e arquiteturas limpas e resilientes. Histórico comprovado: redução de 77% em consumo de memória e bancos de dados 90% mais rápidos em produção.
+Engenheiro Backend com foco em ecossistema TypeScript, Node.js e Go. Especialista em Clean Architecture, microsserviços e Event-Driven Architecture (EDA). Histórico comprovado de otimização de performance em sistemas de grande escala.
 
 ## Stack Principal
 
 - **Linguagens:** TypeScript, JavaScript, Go
-- **Backend:** Node.js, Express, NestJS
+- **Backend:** Node.js, Express, NestJS, Gin Gonic
 - **Frontend:** React, Next.js, Vue.js
 - **Bancos de Dados:** PostgreSQL, MySQL, Redis
 - **Mensageria:** RabbitMQ
@@ -19,18 +19,32 @@ Engenheiro Backend com foco em ecossistema TypeScript e arquiteturas limpas e re
 ## Projetos em Destaque
 
 ### MailGo
-Worker desenvolvido em Go para processamento assíncrono de e-mails em sistemas de grande escala. Elimina gargalos de processamento síncrono.
+Worker desenvolvido em Go para processamento assíncrono de e-mails em sistemas de grande escala. Elimina gargalos de processamento síncrono com alta resiliência.
 - **Tech:** Golang, Docker, RabbitMQ, Gin Gonic
 - **GitHub:** https://github.com/ericNKS/MailGo
 
 ### LIFE FIT
-Landing page de academia com foco em performance e experiência do usuário imersiva.
+Landing page de academia com foco em performance e experiência do usuário imersiva, utilizando animações avançadas com GSAP e scroll suave com Lenis.
 - **Tech:** React, Next.js, Tailwind CSS 4, GSAP, Lenis
 - **Live:** https://life-fit-two.vercel.app/
 - **GitHub:** https://github.com/ericNKS/life-fit
+
+### Gerson Barber
+Site moderno para barbearia a domicílio com agendamento via WhatsApp, galeria de cortes, planos mensais e design responsivo. Projeto de repositório privado.
+- **Tech:** Next.js, React, TypeScript, Tailwind CSS
+- **Live:** https://gerson-barber.vercel.app/
+
+## Serviços
+
+- Otimização de performance de bancos de dados (PostgreSQL, MySQL)
+- Desenvolvimento de microsserviços com Node.js e Go
+- Refatoração de sistemas legados com Clean Architecture
+- Redução de custos de infraestrutura cloud
+- Arquitetura orientada a eventos (EDA) com RabbitMQ
 
 ## Contato
 
 - **Site:** https://ecsilva.com
 - **GitHub:** https://github.com/ericNKS
+- **LinkedIn:** https://www.linkedin.com/in/eric-santos/
 - **Currículo:** https://ecsilva.com/Curriculo_Eric_santos.pdf

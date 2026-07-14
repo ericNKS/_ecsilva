@@ -13,13 +13,14 @@ interface ProjectProps {
 export function ProjectCard({ title, description, image, techs, liveUrl, githubUrl }: ProjectProps) {
   return (
     <div className="group bg-surface border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
-      <div className="relative h-92 w-full overflow-hidden">
+      <div className="relative h-56 w-full overflow-hidden">
         <Image
-          width={500}
-          height={500}
           src={image}
-          alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          alt={`Banner do projeto ${title}`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          loading="lazy"
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
       </div>
