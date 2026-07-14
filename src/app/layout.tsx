@@ -11,11 +11,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://ecsilva.com"),
   title: {
-    default: "Éric Santos | Engenheiro Backend de Alta Performance",
+    default: "Éric Santos | Engenheiro Backend | Node.js, TypeScript, Go e PHP",
     template: "%s | Éric Santos",
   },
   description:
-    "Engenheiro Backend especializado em ecossistema TypeScript, arquiteturas limpas e resilientes. Redução de 77% em consumo de memória e bancos de dados 90% mais rápidos em produção.",
+    "Éric Santos é Engenheiro Backend especializado em Node.js, TypeScript, Go, PHP e arquitetura de microsserviços. Desenvolve APIs de alta performance, sistemas distribuídos e soluções escaláveis.",
   keywords: [
     "Engenheiro Backend",
     "TypeScript",
@@ -32,8 +32,16 @@ export const metadata: Metadata = {
   authors: [{ name: "Éric Santos", url: "https://ecsilva.com" }],
   creator: "Éric Santos",
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+    ],
   },
   openGraph: {
     type: "website",

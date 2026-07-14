@@ -52,7 +52,7 @@ export function StructuredData() {
 
   const professionalServiceSchema = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "Service",
     name: "Éric Santos — Engenharia Backend",
     url: "https://ecsilva.com",
     description:
