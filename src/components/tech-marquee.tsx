@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const technologies = [
   { name: "Node.js", logo: "/tech-logo/node.png" },
   { name: "Typescript", logo: "/tech-logo/Typescript.png" },
@@ -24,7 +26,7 @@ export function TechMarquee() {
         <div className="flex animate-marquee whitespace-nowrap py-4 group-hover:[animation-play-state:paused]">
           {[...technologies, ...technologies].map((tech, i) => (
             <div key={i} className="flex items-center gap-4 mx-12 grayscale hover:grayscale-0 transition-all">
-              <img src={tech.logo} alt={tech.name} className="h-10 w-auto object-contain" />
+              <Image src={tech.logo} alt={tech.name} width={40} height={40} className="h-10 w-auto object-contain" loading="lazy" />
               <span className="text-xl font-semibold text-muted">{tech.name}</span>
             </div>
           ))}

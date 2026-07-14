@@ -17,7 +17,7 @@ export function Navbar() {
   if (!mounted) return null;
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-base/80 backdrop-blur-md border-b px-6 py-4 lg:px-24">
+    <nav aria-label="Navegação principal" className="fixed top-0 w-full z-50 bg-base/80 backdrop-blur-md border-b px-6 py-4 lg:px-24">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-2xl font-black tracking-tighter text-accent">
           ÉRIC<span className="text-primary">.SANTOS</span>

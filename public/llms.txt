@@ -1,0 +1,36 @@
+# Éric Santos — Engenheiro Backend
+
+> Portfólio profissional de Éric Silva dos Santos, Engenheiro Backend especializado em transformar arquiteturas complexas em motores de eficiência.
+
+## Sobre
+
+Engenheiro Backend com foco em ecossistema TypeScript e arquiteturas limpas e resilientes. Histórico comprovado: redução de 77% em consumo de memória e bancos de dados 90% mais rápidos em produção.
+
+## Stack Principal
+
+- **Linguagens:** TypeScript, JavaScript, Go
+- **Backend:** Node.js, Express, NestJS
+- **Frontend:** React, Next.js, Vue.js
+- **Bancos de Dados:** PostgreSQL, MySQL, Redis
+- **Mensageria:** RabbitMQ
+- **Arquitetura:** Clean Architecture, Event-Driven Architecture (EDA), Microsserviços
+- **DevOps:** Docker, Git
+
+## Projetos em Destaque
+
+### MailGo
+Worker desenvolvido em Go para processamento assíncrono de e-mails em sistemas de grande escala. Elimina gargalos de processamento síncrono.
+- **Tech:** Golang, Docker, RabbitMQ, Gin Gonic
+- **GitHub:** https://github.com/ericNKS/MailGo
+
+### LIFE FIT
+Landing page de academia com foco em performance e experiência do usuário imersiva.
+- **Tech:** React, Next.js, Tailwind CSS 4, GSAP, Lenis
+- **Live:** https://life-fit-two.vercel.app/
+- **GitHub:** https://github.com/ericNKS/life-fit
+
+## Contato
+
+- **Site:** https://ecsilva.com
+- **GitHub:** https://github.com/ericNKS
+- **Currículo:** https://ecsilva.com/Curriculo_Eric_santos.pdf

@@ -4,12 +4,71 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { Navbar } from "@/components/navbar";
+import { StructuredData } from "@/components/structured-data";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Éric Santos | Engenheiro Backend de Alta Performance",
-  description: "Especialista em ecossistema TypeScript, arquiteturas limpas e resilientes.",
+  metadataBase: new URL("https://ecsilva.com"),
+  title: {
+    default: "Éric Santos | Engenheiro Backend de Alta Performance",
+    template: "%s | Éric Santos",
+  },
+  description:
+    "Engenheiro Backend especializado em ecossistema TypeScript, arquiteturas limpas e resilientes. Redução de 77% em consumo de memória e bancos de dados 90% mais rápidos em produção.",
+  keywords: [
+    "Engenheiro Backend",
+    "TypeScript",
+    "Node.js",
+    "Clean Architecture",
+    "Microsserviços",
+    "Arquitetura de Software",
+    "PostgreSQL",
+    "Redis",
+    "Go",
+    "Éric Santos",
+    "Desenvolvedor Backend Brasil",
+  ],
+  authors: [{ name: "Éric Santos", url: "https://ecsilva.com" }],
+  creator: "Éric Santos",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://ecsilva.com",
+    siteName: "Éric Santos | Engenheiro Backend",
+    title: "Éric Santos | Engenheiro Backend de Alta Performance",
+    description:
+      "Transformo arquiteturas complexas em motores de eficiência — 77% menos consumo de memória, bancos 90% mais rápidos.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Éric Santos — Engenheiro Backend",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Éric Santos | Engenheiro Backend de Alta Performance",
+    description:
+      "Transformo arquiteturas complexas em motores de eficiência — 77% menos consumo de memória, bancos 90% mais rápidos.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://ecsilva.com",
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +85,7 @@ export default function RootLayout({
             {children}
           </SmoothScroll>
         </ThemeProvider>
+        <StructuredData />
       </body>
     </html>
   );

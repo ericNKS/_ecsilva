@@ -20,7 +20,7 @@ export function Hero() {
         </h1>
 
         <p className="animate-subtitle text-lg text-muted max-w-2xl lg:text-xl leading-relaxed">
-          Sistemas lentos e custos de nuvem fora de controle matam o crescimento. Sou <span className="text-primary font-semibold">Éric Santos</span>, Engenheiro Backend que transforma arquiteturas complexas em motores de eficiência.
+          Sistemas lentos e custos de nuvem fora de controle matam o crescimento. Sou <span className="text-primary font-semibold">Éric Silva dos Santos</span>, Engenheiro Backend que transforma arquiteturas complexas em motores de eficiência.
           <span className="block mt-4 font-medium border-l-4 border-accent pl-4 text-primary/80">
             Histórico real: Redução de 77% em consumo de memória e bancos de dados 90% mais velozes em produção.
           </span>
@@ -50,9 +50,10 @@ export function Hero() {
         <Image
           width={1000}
           height={1000}
-          src="/me.jpeg"
-          alt="Éric Santos"
-          className="relative w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-accent/20 grayscale hover:grayscale-0 transition-all duration-700"
+          src="/me.png"
+          alt="Imagem de Éric Silva dos Santos"
+          title="Imagem de Éric Silva dos Santos"
+          className="relative w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-accent/20 "
         />
       </div>
     </section>

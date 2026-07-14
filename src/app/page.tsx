@@ -12,11 +12,11 @@ export default function Home() {
       <BackgroundBlobs />
 
       <div className="pt-20">
-        <div id="hero"><Hero /></div>
-        <div id="sobre"><ValueSection /></div>
+        <header id="hero"><Hero /></header>
+        <section id="sobre" aria-label="Sobre mim"><ValueSection /></section>
         <TechMarquee />
-        <div id="projetos"><ProjectGrid /></div>
-        <div id="contato"><ContactForm /></div>
+        <section id="projetos" aria-label="Projetos em destaque"><ProjectGrid /></section>
+        <section id="contato" aria-label="Formulário de contato"><ContactForm /></section>
       </div>
 
       <footer className="py-12 border-t text-center text-muted">

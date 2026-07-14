@@ -41,8 +41,9 @@ export function ContactForm() {
             className="p-8 lg:p-12 space-y-6"
           >
             <div>
-              <label className="block text-sm font-semibold mb-2">Nome</label>
+              <label htmlFor="contact-name" className="block text-sm font-semibold mb-2">Nome</label>
               <input
+                id="contact-name"
                 type="text"
                 name="name"
                 value={formData.name}
@@ -53,8 +54,9 @@ export function ContactForm() {
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold mb-2">E-mail</label>
+              <label htmlFor="contact-email" className="block text-sm font-semibold mb-2">E-mail</label>
               <input
+                id="contact-email"
                 type="email"
                 name="email"
                 value={formData.email}
@@ -65,8 +67,9 @@ export function ContactForm() {
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold mb-2">Mensagem</label>
+              <label htmlFor="contact-message" className="block text-sm font-semibold mb-2">Mensagem</label>
               <textarea
+                id="contact-message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}

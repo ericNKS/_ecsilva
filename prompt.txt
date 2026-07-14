@@ -1,0 +1,22 @@
+# Prompt Único — executar para ecsilva.com
+
+Analise o site https://ecsilva.com/ (em local seria http://localhost:3000/) (portfólio profissional de Éric Santos, Engenheiro Backend).
+
+O código do projeto está em: **[caminho do projeto local]**
+
+## Informações do profissional para enriquecer sua análise:
+- **Nome:** Éric Santos
+- **Título:** Engenheiro Backend
+- **Proposta de valor:** Transformar arquiteturas complexas em motores de eficiência — 77% menos consumo de memória, bancos 90% mais rápidos
+- **Stack:** Node.js, TypeScript, Next.js, React, PostgreSQL, Redis, RabbitMQ, Go, MySQL
+- **Abordagem:** Clean Architecture, Event-Driven Architecture (EDA), microsserviços
+- **Projetos:** MailGo (worker Go para e-mails assíncronos), LIFE FIT (landing page com React/Next/GSAP)
+- **Perfis externos:** [LinkedIn], [GitHub] — adicione as URLs reais aqui
+
+## O que espero como entregável:
+1. **Diagnóstico completo** — organizado por seção, com o que está bom, o que falta e o que está errado
+2. **Código pronto para aplicar** — snippets HTML, JSON-LD, CSS, configs, arquivos .txt — tudo pronto para copiar e colar
+3. **Priorização** — cada melhoria classificada como Alta / Média / Baixa prioridade
+4. **Justificativa** — por que cada mudança importa para o ranking/visibilidade
+
+Entregue tudo de uma vez, organizado e completo.
