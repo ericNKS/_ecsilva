@@ -10,9 +10,16 @@ interface ProjectProps {
   githubUrl?: string | null;
 }
 
-export function ProjectCard({ title, description, image, techs, liveUrl, githubUrl }: ProjectProps) {
+export function ProjectCard({
+  title,
+  description,
+  image,
+  techs,
+  liveUrl,
+  githubUrl,
+}: ProjectProps) {
   return (
-    <div className="group bg-surface border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
+    <div className="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:border-accent/60 dark:hover:border-accent/60 transition-all duration-300">
       <div className="relative h-56 w-full overflow-hidden">
         <Image
           src={image}
@@ -28,20 +35,28 @@ export function ProjectCard({ title, description, image, techs, liveUrl, githubU
       <div className="p-6">
         <div className="flex flex-wrap gap-2 mb-4">
           {techs.map((tech) => (
-            <span key={tech} className="text-[10px] font-bold uppercase tracking-wider bg-accent/10 text-accent px-2 py-1 rounded">
+            <span
+              key={tech}
+              className="text-[10px] font-bold uppercase tracking-wider bg-accent/10 text-accent px-2 py-1 rounded"
+            >
               {tech}
             </span>
           ))}
         </div>
 
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-muted text-sm mb-6 line-clamp-4">{description}</p>
+        <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">
+          {title}
+        </h3>
+        <p className="text-slate-700 dark:text-slate-300 text-sm mb-6 line-clamp-4 leading-relaxed">
+          {description}
+        </p>
 
         <div className="flex items-center gap-4">
           {liveUrl && (
             <a
               href={liveUrl}
               target="_blank"
+              rel="noopener noreferrer"
               className="flex-1 bg-accent text-white py-2 rounded-lg font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
             >
               Live Demo <ExternalLink size={16} />
@@ -51,12 +66,14 @@ export function ProjectCard({ title, description, image, techs, liveUrl, githubU
             <a
               href={githubUrl}
               target="_blank"
-              className={`${!liveUrl ? 'flex-1 flex items-center justify-center gap-2 font-medium' : ''} p-2 border dark:border-gray-500 rounded-lg text-muted hover:text-primary hover:border-accent transition-all`}
+              rel="noopener noreferrer"
+              className={`${
+                !liveUrl ? "flex-1 flex items-center justify-center gap-2 font-medium" : ""
+              } p-2 border border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-300 hover:text-accent hover:border-accent transition-all`}
               aria-label="GitHub Repository"
             >
-              {!liveUrl && (
-                <span className="mr-2">GitHub</span>
-              )} <Github size={20} />
+              {!liveUrl && <span className="mr-2">GitHub</span>}
+              <Github size={20} />
             </a>
           )}
         </div>

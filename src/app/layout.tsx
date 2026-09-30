@@ -4,33 +4,60 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { Navbar } from "@/components/navbar";
-import { StructuredData } from "@/components/structured-data";
+import { I18nProvider } from "@/i18n/context";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ecsilva.com"),
   title: {
-    default: "Éric Santos | Engenheiro Backend | Node.js, TypeScript, Go e PHP",
+    default:
+      "Éric Silva dos Santos (Éric Santos) | Desenvolvedor de Software & Engenheiro Backend",
     template: "%s | Éric Santos",
   },
   description:
-    "Éric Santos é Engenheiro Backend especializado em Node.js, TypeScript, Go, PHP e arquitetura de microsserviços. Desenvolve APIs de alta performance, sistemas distribuídos e soluções escaláveis.",
+    "Éric Silva dos Santos (Éric Santos) — Engenheiro Backend e Desenvolvedor de Software Full Stack especializado em Node.js, TypeScript, Go e arquiteturas de alta eficiência. 77% menos memória em microsserviços e bancos 90% mais rápidos.",
   keywords: [
-    "Engenheiro Backend",
+    "Éric Silva dos Santos",
+    "Éric Santos",
+    "Éric Silva",
+    "Eric Silva dos Santos",
+    "Eric Silva",
+    "Eric Santos",
+    "ecsilva",
+    "desenvolvedor de software",
+    "dev backend",
+    "dev frontend",
+    "dev fullstack",
+    "engenheiro backend",
+    "engenheiro de software",
+    "software engineer",
+    "fullstack developer",
+    "backend developer",
+    "frontend developer",
     "TypeScript",
     "Node.js",
+    "NestJS",
+    "Go",
+    "Golang",
     "Clean Architecture",
     "Microsserviços",
+    "Microservices",
     "Arquitetura de Software",
     "PostgreSQL",
+    "MySQL",
     "Redis",
-    "Go",
-    "Éric Santos",
+    "RabbitMQ",
+    "Docker",
+    "Desenvolvedor Salvador Bahia",
     "Desenvolvedor Backend Brasil",
+    "Programador Remoto",
   ],
-  authors: [{ name: "Éric Santos", url: "https://ecsilva.com" }],
-  creator: "Éric Santos",
+  authors: [
+    { name: "Éric Silva dos Santos", url: "https://ecsilva.com" },
+    { name: "Éric Santos", url: "https://ecsilva.com" },
+  ],
+  creator: "Éric Silva dos Santos",
   icons: {
     icon: [
       {
@@ -44,27 +71,30 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    type: "website",
+    type: "profile",
     locale: "pt_BR",
+    alternateLocale: ["en_US"],
     url: "https://ecsilva.com",
-    siteName: "Éric Santos | Engenheiro Backend",
-    title: "Éric Santos | Engenheiro Backend de Alta Performance",
+    siteName: "Éric Silva dos Santos | Portfólio de Engenharia de Software",
+    title:
+      "Éric Silva dos Santos (Éric Santos) | Desenvolvedor de Software & Engenheiro Backend",
     description:
-      "Transformo arquiteturas complexas em motores de eficiência — 77% menos consumo de memória, bancos 90% mais rápidos.",
+      "Transformo arquiteturas complexas em motores de eficiência — 77% menos consumo de memória e bancos de dados 90% mais rápidos em produção.",
     images: [
       {
         url: "/og",
         width: 1200,
         height: 630,
-        alt: "Éric Santos — Engenheiro Backend especializado em TypeScript, Node.js e Go",
+        alt: "Éric Silva dos Santos — Engenheiro Backend e Desenvolvedor de Software (TypeScript, Node.js, Go)",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Éric Santos | Engenheiro Backend de Alta Performance",
+    title:
+      "Éric Silva dos Santos (Éric Santos) | Desenvolvedor de Software & Engenheiro Backend",
     description:
-      "Transformo arquiteturas complexas em motores de eficiência — 77% menos consumo de memória, bancos 90% mais rápidos.",
+      "Transformo arquiteturas complexas em motores de eficiência — 77% menos consumo de memória e bancos de dados 90% mais rápidos.",
     images: ["/og"],
   },
   robots: {
@@ -80,6 +110,11 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://ecsilva.com",
+    languages: {
+      "pt-BR": "https://ecsilva.com",
+      en: "https://ecsilva.com/en",
+      "x-default": "https://ecsilva.com",
+    },
   },
 };
 
@@ -93,16 +128,23 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#0f172a" />
         <link rel="me" href="https://github.com/ericNKS" />
-        <link rel="me" href="https://www.linkedin.com/in/eric-santos/" />
+        <link rel="me" href="https://www.linkedin.com/in/eric-ssantos" />
+        <link rel="me" href="https://wa.me/5571992037328" />
+        <link rel="alternate" hrefLang="pt-BR" href="https://ecsilva.com" />
+        <link rel="alternate" hrefLang="en" href="https://ecsilva.com/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://ecsilva.com" />
+        <link rel="help" type="text/markdown" href="https://ecsilva.com/llms.txt" />
+        <link rel="help" type="text/markdown" href="https://ecsilva.com/llms-full.txt" />
       </head>
       <body className={`${inter.className} max-w-100dvh`}>
         <ThemeProvider>
-          <SmoothScroll>
-            <Navbar />
-            {children}
-          </SmoothScroll>
+          <I18nProvider>
+            <SmoothScroll>
+              <Navbar />
+              {children}
+            </SmoothScroll>
+          </I18nProvider>
         </ThemeProvider>
-        <StructuredData />
       </body>
     </html>
   );

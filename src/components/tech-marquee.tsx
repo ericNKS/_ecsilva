@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import { useI18n } from "@/i18n/context";
+
 const technologies = [
   { name: "Node.js", logo: "/tech-logo/node.png" },
   { name: "Typescript", logo: "/tech-logo/Typescript.png" },
@@ -15,11 +17,15 @@ const technologies = [
 ];
 
 export function TechMarquee() {
+  const { locale } = useI18n();
+
   return (
-    <section className="py-20 overflow-hidden bg-surface border-y">
+    <section className="py-20 overflow-hidden bg-slate-100/60 dark:bg-slate-900/40 border-y border-slate-200 dark:border-slate-800">
       <div className="flex flex-col items-center mb-10">
         <span className="text-accent font-bold tracking-[0.2em] uppercase text-sm mb-2">Tech Stack</span>
-        <h2 className="text-2xl font-bold">Tecnologias que Domino</h2>
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
+          {locale === "en" ? "Core Technologies & Stack" : "Tecnologias que Domino"}
+        </h2>
       </div>
 
       <div className="relative flex overflow-x-hidden group">
@@ -27,7 +33,7 @@ export function TechMarquee() {
           {[...technologies, ...technologies].map((tech, i) => (
             <div key={i} className="flex items-center gap-4 mx-12 grayscale hover:grayscale-0 transition-all">
               <Image src={tech.logo} alt={`Logo ${tech.name}`} width={40} height={40} className="object-contain" style={{ width: "auto", height: "40px" }} loading="lazy" />
-              <span className="text-xl font-semibold text-muted">{tech.name}</span>
+              <span className="text-xl font-semibold text-slate-800 dark:text-slate-200">{tech.name}</span>
             </div>
           ))}
         </div>

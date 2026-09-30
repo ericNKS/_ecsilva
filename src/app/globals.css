@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-base: var(--bg-base);
+  --color-canvas: var(--bg-base);
   --color-surface: var(--bg-surface);
   --color-primary: var(--text-primary);
   --color-muted: var(--text-muted);
@@ -17,7 +19,7 @@
     --bg-base: #F8FAFC;
     --bg-surface: #FFFFFF;
     --text-primary: #0F172A;
-    --text-muted: #64748B;
+    --text-muted: #334155;
     --accent-color: #4F46E5;
 
     --radius: 0.75rem;
@@ -26,8 +28,8 @@
   .dark {
     --bg-base: #0F172A;
     --bg-surface: #1E293B;
-    --text-primary: #F1F5F9;
-    --text-muted: #94A3B8;
+    --text-primary: #F8FAFC;
+    --text-muted: #CBD5E1;
     --accent-color: #6366F1;
   }
 }

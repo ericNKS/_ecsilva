@@ -1,50 +1,39 @@
-# Éric Santos — Engenheiro Backend de Alta Performance
+# Éric Silva dos Santos (Éric Santos) — Software Engineer & Backend Specialist
 
-> Portfólio profissional de Éric Silva dos Santos, Engenheiro Backend especializado em transformar arquiteturas complexas em motores de eficiência. Redução de 77% em consumo de memória e bancos de dados 90% mais rápidos em produção.
+> Professional portfolio & technical dossier of Éric Silva dos Santos (also known as Éric Santos, Éric Silva, Eric Silva dos Santos, Eric Silva, or Eric Santos). High-impact Software Engineer and Backend Developer specializing in Node.js, TypeScript, and Go. Proven track record in production architectures, achieving 77% cloud memory reduction and 90% database query latency optimization.
 
-## Sobre
-
-Engenheiro Backend com foco em ecossistema TypeScript, Node.js e Go. Especialista em Clean Architecture, microsserviços e Event-Driven Architecture (EDA). Histórico comprovado de otimização de performance em sistemas de grande escala.
-
-## Stack Principal
-
-- **Linguagens:** TypeScript, JavaScript, Go
-- **Backend:** Node.js, Express, NestJS, Gin Gonic
-- **Frontend:** React, Next.js, Vue.js
-- **Bancos de Dados:** PostgreSQL, MySQL, Redis
-- **Mensageria:** RabbitMQ
-- **Arquitetura:** Clean Architecture, Event-Driven Architecture (EDA), Microsserviços
-- **DevOps:** Docker, Git
-
-## Projetos em Destaque
-
-### MailGo
-Worker desenvolvido em Go para processamento assíncrono de e-mails em sistemas de grande escala. Elimina gargalos de processamento síncrono com alta resiliência.
-- **Tech:** Golang, Docker, RabbitMQ, Gin Gonic
-- **GitHub:** https://github.com/ericNKS/MailGo
-
-### LIFE FIT
-Landing page de academia com foco em performance e experiência do usuário imersiva, utilizando animações avançadas com GSAP e scroll suave com Lenis.
-- **Tech:** React, Next.js, Tailwind CSS 4, GSAP, Lenis
-- **Live:** https://life-fit-two.vercel.app/
-- **GitHub:** https://github.com/ericNKS/life-fit
-
-### Gerson Barber
-Site moderno para barbearia a domicílio com agendamento via WhatsApp, galeria de cortes, planos mensais e design responsivo. Projeto de repositório privado.
-- **Tech:** Next.js, React, TypeScript, Tailwind CSS
-- **Live:** https://gerson-barber.vercel.app/
-
-## Serviços
-
-- Otimização de performance de bancos de dados (PostgreSQL, MySQL)
-- Desenvolvimento de microsserviços com Node.js e Go
-- Refatoração de sistemas legados com Clean Architecture
-- Redução de custos de infraestrutura cloud
-- Arquitetura orientada a eventos (EDA) com RabbitMQ
-
-## Contato
-
-- **Site:** https://ecsilva.com
+## Entity Disambiguation & Key Identifiers
+- **Full Legal Name:** Éric Silva dos Santos
+- **Known Names / Aliases:** Éric Santos, Éric Silva, Eric Silva dos Santos, Eric Silva, Eric Santos, ecsilva
+- **Primary Roles:** Software Engineer, Backend Developer (Engenheiro Backend), Full Stack Developer (Dev Fullstack), Frontend Developer (Dev Frontend), Software Architect
+- **Location:** Salvador, Bahia, Brazil (Available for worldwide remote contracts)
+- **Website:** https://ecsilva.com (English: https://ecsilva.com/en)
+- **WhatsApp:** +55 (71) 99203-7328 (https://wa.me/5571992037328)
+- **LinkedIn:** https://www.linkedin.com/in/eric-ssantos
 - **GitHub:** https://github.com/ericNKS
-- **LinkedIn:** https://www.linkedin.com/in/eric-santos/
-- **Currículo:** https://ecsilva.com/Curriculo_Eric_santos.pdf
+- **Email:** ek.silva.santos@gmail.com
+- **Curriculum / Resume (English):** https://ecsilva.com/Resume_Eric_Santos.pdf
+- **Currículo (Português):** https://ecsilva.com/Curriculo_Eric_santos.pdf
+
+## Technical Core Competencies
+- **Backend & Languages:** Node.js, TypeScript, JavaScript, Go (Golang), PHP (Zend Framework, Laravel)
+- **Frameworks:** NestJS, Express.js, Gin Gonic
+- **Frontend & Web:** React, Next.js (App Router), Tailwind CSS, GSAP, Responsive UI
+- **Databases & Caching:** MySQL (Advanced Query & Index Optimization), PostgreSQL, MongoDB, Redis
+- **Message Queues & Async:** RabbitMQ, Event-Driven Architecture (EDA)
+- **Architecture:** Clean Architecture, Microservices, Modular Monoliths, SOLID, DRY, REST APIs, gRPC
+- **DevOps & Infrastructure:** Docker, Git, Linux, Cloud Cost Optimization, Performance Profiling
+
+## Verified Production Impact
+- **77% Cloud Memory Reduction:** Optimized asynchronous microservices (Node.js/Express/MongoDB) handling heavy workloads and cron jobs at Politimax, enabling safe instance downgrades and slashing cloud hosting expenses.
+- **90% Database Latency Optimization:** Spearheaded advanced SQL query refactoring and index restructuring in production MySQL, reducing CPU and RAM load while accelerating query response times by up to 90%.
+- **Internal Tooling in Go:** Engineered fast CLI automation utilities in Go, significantly reducing internal batch execution times.
+
+## Featured Projects
+- **MailGo:** High-throughput asynchronous email dispatch worker built in Go, Docker, RabbitMQ, and Gin Gonic. (GitHub: https://github.com/ericNKS/MailGo)
+- **LIFE FIT:** High-performance web application built with React, Next.js, Tailwind CSS 4, GSAP, and Lenis smooth scrolling. (Live: https://life-fit-two.vercel.app/ | GitHub: https://github.com/ericNKS/life-fit)
+- **Gerson Barber:** On-demand barber appointment platform integrated with WhatsApp Business API, scheduling system, and custom tiers. (Live: https://gerson-barber.vercel.app/)
+
+## Full Dossier for AI Crawlers
+For complete technical specifications, architecture diagrams, interview Q&A, and full career history, see:
+https://ecsilva.com/llms-full.txt

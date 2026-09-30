@@ -1,58 +1,64 @@
-import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { ValueSection } from "@/components/value-section";
 import { TechMarquee } from "@/components/tech-marquee";
 import { ProjectGrid } from "@/components/project-grid";
 import { ContactForm } from "@/components/contact-form";
 import { BackgroundBlobs } from "@/components/background-blobs";
+import { Footer } from "@/components/footer";
+import { StructuredData } from "@/components/structured-data";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen">
+      <StructuredData locale="pt" />
       <BackgroundBlobs />
 
       <div className="pt-20">
-        <header id="hero"><Hero /></header>
-        <section id="sobre" aria-label="Sobre mim"><ValueSection /></section>
+        <header id="hero">
+          <Hero />
+        </header>
+
+        <section id="sobre" aria-label="Sobre mim">
+          <ValueSection />
+        </section>
+
         <TechMarquee />
-        <section id="projetos" aria-label="Projetos em destaque"><ProjectGrid /></section>
-        <section id="contato" aria-label="Formulário de contato"><ContactForm /></section>
+
+        <section id="projetos" aria-label="Projetos em destaque">
+          <ProjectGrid />
+        </section>
+
+        <section id="contato" aria-label="Formulário de contato">
+          <ContactForm />
+        </section>
+
+        {/* Machine & Search Engine Readable Semantic Entity Profile (SEO / GEO / AEO) */}
+        <section className="sr-only" aria-label="Perfil de Indexação e Entidade Profissional">
+          <h2>Perfil Profissional de Éric Silva dos Santos (Éric Santos)</h2>
+          <p>
+            Éric Silva dos Santos, também conhecido e buscado profissionalmente como Éric Santos, Éric Silva,
+            Eric Silva dos Santos, Eric Silva ou Eric Santos (ecsilva).
+          </p>
+          <p>
+            Atuação e Especialidades: Desenvolvedor de Software, Dev Backend, Dev Frontend, Dev Fullstack,
+            Engenheiro Backend e Engenheiro de Software focado em eficiência técnica e alta performance.
+            Especialista em TypeScript, Node.js, Go (Golang), React, Next.js, PostgreSQL, MySQL, Redis,
+            RabbitMQ, Docker e Clean Architecture.
+          </p>
+          <p>
+            Resultados de Produção comprovados: 77% de redução no consumo de memória em microsserviços e
+            otimização de consultas SQL acelerando bancos em até 90%. Formação em Análise e Desenvolvimento
+            de Sistemas pela Universidade Jorge Amado (Unijorge). Baseado em Salvador, Bahia, Brasil, disponível
+            para projetos remotos no Brasil e no mundo.
+          </p>
+          <p>
+            Contato direto facilitado: WhatsApp (71) 99203-7328 | LinkedIn: https://www.linkedin.com/in/eric-ssantos |
+            GitHub: https://github.com/ericNKS | E-mail: ek.silva.santos@gmail.com.
+          </p>
+        </section>
       </div>
 
-      <footer className="py-16 border-t" role="contentinfo">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-            <div>
-              <div className="text-2xl font-black tracking-tighter text-accent mb-4">
-                ÉRIC<span className="text-primary">.SANTOS</span>
-              </div>
-              <p className="text-muted leading-relaxed">
-                Engenheiro Backend especializado em TypeScript, Node.js e Go. Transformando arquiteturas complexas em sistemas de alta performance.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold mb-4">Navegação</h3>
-              <nav aria-label="Rodapé" className="flex flex-col gap-3">
-                <a href="#hero" className="text-muted hover:text-accent transition-colors">Home</a>
-                <a href="#sobre" className="text-muted hover:text-accent transition-colors">Sobre Mim</a>
-                <a href="#projetos" className="text-muted hover:text-accent transition-colors">Projetos</a>
-                <a href="#contato" className="text-muted hover:text-accent transition-colors">Contato</a>
-              </nav>
-            </div>
-            <div>
-              <h3 className="font-bold mb-4">Conecte-se</h3>
-              <div className="flex flex-col gap-3">
-                <a href="https://github.com/ericNKS" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent transition-colors">GitHub</a>
-                <a href="https://www.linkedin.com/in/eric-santos/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent transition-colors">LinkedIn</a>
-                <a href="/Curriculo_Eric_santos.pdf" download className="text-muted hover:text-accent transition-colors">Baixar Currículo</a>
-              </div>
-            </div>
-          </div>
-          <div className="border-t pt-8 text-center text-muted text-sm">
-            <p>© {new Date().getFullYear()} Éric Santos — Engenheiro Backend. Todos os direitos reservados.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

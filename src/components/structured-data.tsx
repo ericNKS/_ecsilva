@@ -1,163 +1,222 @@
-export function StructuredData() {
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Éric Silva dos Santos",
-    url: "https://ecsilva.com",
-    image: "https://ecsilva.com/me.webp",
-    jobTitle: "Engenheiro Backend",
-    worksFor: {
-      "@type": "Organization",
-      name: "Freelance",
-    },
-    sameAs: [
-      "https://github.com/ericNKS",
-      "https://www.linkedin.com/in/eric-santos/",
-    ],
-    knowsAbout: [
-      "Node.js",
-      "TypeScript",
-      "Go",
-      "PostgreSQL",
-      "MySQL",
-      "Redis",
-      "RabbitMQ",
-      "Clean Architecture",
-      "Event-Driven Architecture",
-      "Microsserviços",
-      "Otimização de Performance",
-      "Arquitetura de Software",
-    ],
-    description:
-      "Engenheiro Backend especializado em transformar arquiteturas complexas em motores de eficiência. Redução de 77% em consumo de memória e bancos de dados 90% mais rápidos.",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "BR",
-    },
-  };
+export function StructuredData({ locale = "pt" }: { locale?: "pt" | "en" }) {
+  const isEn = locale === "en";
 
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Éric Santos | Engenheiro Backend",
-    url: "https://ecsilva.com",
-    author: {
-      "@type": "Person",
-      name: "Éric Santos",
-    },
-    inLanguage: "pt-BR",
-    description:
-      "Portfólio profissional de Éric Santos, Engenheiro Backend especializado em TypeScript, Node.js, Go e arquiteturas de alta performance.",
-  };
+  const personId = "https://ecsilva.com/#person";
+  const websiteId = "https://ecsilva.com/#website";
+  const profilePageId = isEn
+    ? "https://ecsilva.com/en#profilepage"
+    : "https://ecsilva.com/#profilepage";
 
-  const professionalServiceSchema = {
+  const schemaGraph = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Éric Santos — Engenharia Backend",
-    url: "https://ecsilva.com",
-    description:
-      "Serviços de engenharia backend: otimização de performance, arquitetura de microsserviços, refatoração de sistemas legados, otimização de bancos de dados PostgreSQL e MySQL.",
-    areaServed: "BR",
-    serviceType: [
-      "Backend Development",
-      "System Architecture",
-      "Performance Optimization",
-      "Database Optimization",
-      "Microsserviços",
-      "Clean Architecture Consulting",
-    ],
-    provider: {
-      "@type": "Person",
-      name: "Éric Santos",
-    },
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
+    "@graph": [
+      // 1. Person Entity (Comprehensive disambiguation for search and AI engines)
       {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://ecsilva.com",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Sobre",
-        item: "https://ecsilva.com#sobre",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Projetos",
-        item: "https://ecsilva.com#projetos",
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Contato",
-        item: "https://ecsilva.com#contato",
-      },
-    ],
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "O que faz um Engenheiro Backend?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Um Engenheiro Backend projeta, desenvolve e otimiza a lógica do servidor, bancos de dados e APIs que sustentam aplicações. É responsável pela performance, segurança e escalabilidade dos sistemas.",
+        "@type": "Person",
+        "@id": personId,
+        name: "Éric Silva dos Santos",
+        alternateName: [
+          "Éric Santos",
+          "Éric Silva",
+          "Eric Silva dos Santos",
+          "Eric Silva",
+          "Eric Santos",
+          "ecsilva",
+        ],
+        givenName: "Éric",
+        familyName: "Silva dos Santos",
+        additionalName: "Santos",
+        url: isEn ? "https://ecsilva.com/en" : "https://ecsilva.com",
+        image: "https://ecsilva.com/me.webp",
+        telephone: "+5571992037328",
+        email: "ek.silva.santos@gmail.com",
+        jobTitle: isEn
+          ? [
+              "Backend Engineer",
+              "Software Engineer",
+              "Full Stack Developer",
+              "Frontend Developer",
+            ]
+          : [
+              "Engenheiro Backend",
+              "Desenvolvedor de Software",
+              "Dev Backend",
+              "Dev Frontend",
+              "Dev Fullstack",
+              "Engenheiro de Software",
+            ],
+        worksFor: {
+          "@type": "Organization",
+          name: "Politimax",
+          jobTitle: isEn ? "Backend Developer" : "Desenvolvedor Backend",
         },
-      },
-      {
-        "@type": "Question",
-        name: "Como reduzir custos de infraestrutura cloud?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Através de otimização de código, uso eficiente de memória, implementação de microsserviços e processamento assíncrono. Projetos reais alcançaram redução de 77% no consumo de memória.",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Salvador",
+          addressRegion: "BA",
+          addressCountry: "BR",
         },
-      },
-      {
-        "@type": "Question",
-        name: "Quanto tempo leva para otimizar um banco de dados?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Depende da complexidade do sistema. Uma auditoria inicial identifica gargalos em 1-2 semanas. Implementações completas de otimização podem levar de 2 a 8 semanas, com melhorias de até 90% na velocidade.",
+        alumniOf: {
+          "@type": "CollegeOrUniversity",
+          name: "Universidade Jorge Amado (Unijorge)",
         },
+        knowsLanguage: [
+          {
+            "@type": "Language",
+            name: "Portuguese",
+            alternateName: "pt-BR",
+          },
+          {
+            "@type": "Language",
+            name: "English",
+            alternateName: "en",
+          },
+        ],
+        sameAs: [
+          "https://github.com/ericNKS",
+          "https://www.linkedin.com/in/eric-ssantos",
+          "https://wa.me/5571992037328",
+          "https://ecsilva.com",
+        ],
+        knowsAbout: [
+          "Software Engineering",
+          "Backend Development",
+          "Frontend Development",
+          "Full Stack Development",
+          "Node.js",
+          "TypeScript",
+          "JavaScript",
+          "Go",
+          "Golang",
+          "NestJS",
+          "Express.js",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "MongoDB",
+          "RabbitMQ",
+          "Docker",
+          "Clean Architecture",
+          "Event-Driven Architecture",
+          "Microsserviços",
+          "Cloud Cost Optimization",
+          "Database Performance",
+        ],
+        hasOccupation: {
+          "@type": "Occupation",
+          name: isEn
+            ? "Software Engineer & Backend Developer"
+            : "Engenheiro de Software & Desenvolvedor Backend",
+          occupationalCategory: "15-1252.00",
+          skills:
+            "Node.js, TypeScript, Go, PostgreSQL, MySQL, Redis, RabbitMQ, Clean Architecture, Microservices",
+        },
+        description: isEn
+          ? "High-impact Backend Engineer and Software Developer specializing in Node.js, TypeScript, and Go. Proven track record in production architectures, achieving 77% memory consumption reduction and 90% faster databases."
+          : "Engenheiro Backend e Desenvolvedor Fullstack especializado em Node.js, TypeScript e Go. Transformando arquiteturas complexas em motores de eficiência — 77% menos consumo de memória e bancos 90% mais rápidos.",
+      },
+
+      // 2. ProfilePage (Google official recommendation for developer portfolios)
+      {
+        "@type": "ProfilePage",
+        "@id": profilePageId,
+        url: isEn ? "https://ecsilva.com/en" : "https://ecsilva.com",
+        name: isEn
+          ? "Éric Silva dos Santos (Eric Santos) - Portfolio & Engineering Profile"
+          : "Éric Silva dos Santos (Éric Santos) - Portfólio & Perfil de Engenharia",
+        mainEntity: { "@id": personId },
+        about: { "@id": personId },
+        inLanguage: isEn ? "en" : "pt-BR",
+      },
+
+      // 3. WebSite
+      {
+        "@type": "WebSite",
+        "@id": websiteId,
+        url: "https://ecsilva.com",
+        name: "Éric Santos | Engenheiro Backend",
+        alternateName: [
+          "ecsilva",
+          "Éric Silva dos Santos Portfólio",
+          "Eric Santos Dev",
+        ],
+        author: { "@id": personId },
+        publisher: { "@id": personId },
+        inLanguage: ["pt-BR", "en"],
+      },
+
+      // 4. ProfessionalService / Consulting
+      {
+        "@type": "ProfessionalService",
+        name: isEn
+          ? "Éric Santos — Backend Engineering & Software Architecture"
+          : "Éric Santos — Engenharia Backend & Arquitetura de Software",
+        url: isEn ? "https://ecsilva.com/en" : "https://ecsilva.com",
+        telephone: "+5571992037328",
+        provider: { "@id": personId },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Global / Remote",
+        },
+        serviceType: [
+          "Backend Engineering",
+          "Full Stack Software Development",
+          "Cloud Cost Optimization",
+          "Database Performance Tuning",
+          "Microservices & Event-Driven Architecture",
+          "Clean Architecture Consulting",
+        ],
+        description: isEn
+          ? "High-performance software engineering services: cloud memory and infrastructure cost optimization, microservices in Node.js and Go, and advanced SQL tuning for PostgreSQL and MySQL."
+          : "Serviços de engenharia backend: otimização de performance, arquitetura de microsserviços, refatoração de sistemas legados, otimização de bancos de dados PostgreSQL e MySQL.",
+      },
+
+      // 5. BreadcrumbList
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: isEn ? "Home" : "Início",
+            item: isEn ? "https://ecsilva.com/en" : "https://ecsilva.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: isEn ? "About" : "Sobre",
+            item: isEn
+              ? "https://ecsilva.com/en#sobre"
+              : "https://ecsilva.com#sobre",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: isEn ? "Projects" : "Projetos",
+            item: isEn
+              ? "https://ecsilva.com/en#projetos"
+              : "https://ecsilva.com#projetos",
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
+            name: isEn ? "Contact" : "Contato",
+            item: isEn
+              ? "https://ecsilva.com/en#contato"
+              : "https://ecsilva.com#contato",
+          },
+        ],
       },
     ],
   };
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(professionalServiceSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
+    />
   );
 }
